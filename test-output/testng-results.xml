@@ -1,29 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-24T04:01:18 PDT" name="Suite" finished-at="2023-06-24T04:01:42 PDT" duration-ms="23508">
+  <suite started-at="2023-06-24T05:33:45 PDT" name="Suite" finished-at="2023-06-24T05:34:00 PDT" duration-ms="15078">
     <groups>
     </groups>
-    <test started-at="2023-06-24T04:01:18 PDT" name="Test1" finished-at="2023-06-24T04:01:34 PDT" duration-ms="16150">
-      <class name="ParellelTestExeNG.ParallelTestDemo1">
-        <test-method signature="verifyLogo()[pri:0, instance:ParellelTestExeNG.ParallelTestDemo1@639c2c1d]" started-at="2023-06-24T04:01:18 PDT" name="verifyLogo" finished-at="2023-06-24T04:01:28 PDT" duration-ms="9357" status="PASS">
+    <test started-at="2023-06-24T05:33:45 PDT" name="Test" finished-at="2023-06-24T05:34:00 PDT" duration-ms="15078">
+      <class name="Listeners.ListenerDemo">
+        <test-method signature="login()[pri:0, instance:Listeners.ListenerDemo@618b19ad]" started-at="2023-06-24T05:33:45 PDT" name="login" finished-at="2023-06-24T05:34:00 PDT" duration-ms="14880" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method signature="verifyTitle()[pri:0, instance:ParellelTestExeNG.ParallelTestDemo1@639c2c1d]" started-at="2023-06-24T04:01:28 PDT" name="verifyTitle" finished-at="2023-06-24T04:01:34 PDT" duration-ms="6658" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="testFail()[pri:0, instance:Listeners.ListenerDemo@618b19ad]" started-at="2023-06-24T05:34:00 PDT" name="testFail" finished-at="2023-06-24T05:34:00 PDT" duration-ms="40" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at Listeners.ListenerDemo.testFail(ListenerDemo.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTitle -->
-      </class> <!-- ParellelTestExeNG.ParallelTestDemo1 -->
-    </test> <!-- Test1 -->
-    <test started-at="2023-06-24T04:01:34 PDT" name="Test2" finished-at="2023-06-24T04:01:42 PDT" duration-ms="7290">
-      <class name="ParellelTestExeNG.ParallelTestDemo2">
-        <test-method signature="verifyLogin()[pri:0, instance:ParellelTestExeNG.ParallelTestDemo2@4e08711f]" started-at="2023-06-24T04:01:34 PDT" name="verifyLogin" finished-at="2023-06-24T04:01:42 PDT" duration-ms="7285" status="PASS">
+        </test-method> <!-- testFail -->
+        <test-method signature="testSkipped()[pri:0, instance:Listeners.ListenerDemo@618b19ad]" started-at="2023-06-24T05:34:00 PDT" name="testSkipped" finished-at="2023-06-24T05:34:00 PDT" duration-ms="3" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skip exception is thrown...]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skip exception is thrown...
+at Listeners.ListenerDemo.testSkipped(ListenerDemo.java:55)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLogin -->
-      </class> <!-- ParellelTestExeNG.ParallelTestDemo2 -->
-    </test> <!-- Test2 -->
+        </test-method> <!-- testSkipped -->
+      </class> <!-- Listeners.ListenerDemo -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
