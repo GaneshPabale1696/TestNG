@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-24T03:40:06 PDT" name="Suite" finished-at="2023-06-24T03:40:41 PDT" duration-ms="35486">
+  <suite started-at="2023-06-24T04:01:18 PDT" name="Suite" finished-at="2023-06-24T04:01:42 PDT" duration-ms="23508">
     <groups>
     </groups>
-    <test started-at="2023-06-24T03:40:06 PDT" name="Test" finished-at="2023-06-24T03:40:41 PDT" duration-ms="35486">
+    <test started-at="2023-06-24T04:01:18 PDT" name="Test1" finished-at="2023-06-24T04:01:34 PDT" duration-ms="16150">
       <class name="ParellelTestExeNG.ParallelTestDemo1">
-        <test-method signature="verifyLogo()[pri:0, instance:ParellelTestExeNG.ParallelTestDemo1@639c2c1d]" started-at="2023-06-24T03:40:06 PDT" name="verifyLogo" finished-at="2023-06-24T03:40:34 PDT" duration-ms="27980" status="PASS">
+        <test-method signature="verifyLogo()[pri:0, instance:ParellelTestExeNG.ParallelTestDemo1@639c2c1d]" started-at="2023-06-24T04:01:18 PDT" name="verifyLogo" finished-at="2023-06-24T04:01:28 PDT" duration-ms="9357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogo -->
-        <test-method signature="verifyTitle()[pri:0, instance:ParellelTestExeNG.ParallelTestDemo1@639c2c1d]" started-at="2023-06-24T03:40:34 PDT" name="verifyTitle" finished-at="2023-06-24T03:40:41 PDT" duration-ms="6842" status="PASS">
+        <test-method signature="verifyTitle()[pri:0, instance:ParellelTestExeNG.ParallelTestDemo1@639c2c1d]" started-at="2023-06-24T04:01:28 PDT" name="verifyTitle" finished-at="2023-06-24T04:01:34 PDT" duration-ms="6658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
       </class> <!-- ParellelTestExeNG.ParallelTestDemo1 -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-06-24T04:01:34 PDT" name="Test2" finished-at="2023-06-24T04:01:42 PDT" duration-ms="7290">
+      <class name="ParellelTestExeNG.ParallelTestDemo2">
+        <test-method signature="verifyLogin()[pri:0, instance:ParellelTestExeNG.ParallelTestDemo2@4e08711f]" started-at="2023-06-24T04:01:34 PDT" name="verifyLogin" finished-at="2023-06-24T04:01:42 PDT" duration-ms="7285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+      </class> <!-- ParellelTestExeNG.ParallelTestDemo2 -->
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>
