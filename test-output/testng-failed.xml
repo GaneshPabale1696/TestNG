@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DataProviderTestNG.DataProviderDemo">
+      <class name="ParellelTestExeNG.ParallelTestDemo1">
         <methods>
-          <include name="TestCaseGoogleSearch" invocation-numbers="1"/>
+          <include name="verifyLogo"/>
+          <include name="verifyTitle"/>
         </methods>
-      </class> <!-- DataProviderTestNG.DataProviderDemo -->
+      </class> <!-- ParellelTestExeNG.ParallelTestDemo1 -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
