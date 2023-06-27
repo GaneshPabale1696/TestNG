@@ -8,6 +8,7 @@
     <classes>
       <class name="Listeners.ListenerDemo">
         <methods>
+          <include name="login"/>
           <include name="testFail"/>
           <include name="testSkipped"/>
         </methods>
