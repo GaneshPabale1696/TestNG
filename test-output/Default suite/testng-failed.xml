@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Assertions.SoftAssertClass">
+      <class name="CrossBrowserTesting.CrossBrowserTestingDemo">
         <methods>
-          <include name="testMethod"/>
+          <include name="quit"/>
+          <include name="LaunchBrowser"/>
+          <include name="VerifyTitle"/>
         </methods>
-      </class> <!-- Assertions.SoftAssertClass -->
+      </class> <!-- CrossBrowserTesting.CrossBrowserTestingDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
