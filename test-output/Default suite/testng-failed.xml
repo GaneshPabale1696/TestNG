@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CrossBrowserTesting.CrossBrowserTestingDemo">
+      <class name="DataProviderWithExcel.DataProviderWithExcel">
         <methods>
-          <include name="quit"/>
-          <include name="LaunchBrowser"/>
-          <include name="VerifyTitle"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="searchKeyword" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- CrossBrowserTesting.CrossBrowserTestingDemo -->
+      </class> <!-- DataProviderWithExcel.DataProviderWithExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
