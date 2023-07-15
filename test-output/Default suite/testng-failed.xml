@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DataProviderWithExcel.DataProviderWithExcel">
+      <class name="TestNGReports.TestReportsExample">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="searchKeyword" invocation-numbers="0 1"/>
+          <include name="googleSearch"/>
         </methods>
-      </class> <!-- DataProviderWithExcel.DataProviderWithExcel -->
+      </class> <!-- TestNGReports.TestReportsExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

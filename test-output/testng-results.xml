@@ -1,59 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="2" skipped="1">
   <reporter-output>
+    <line>
+      <![CDATA[chrome browser opened...]]>
+    </line>
+    <line>
+      <![CDATA[Qutub Minar keyword is entered...]]>
+    </line>
+    <line>
+      <![CDATA[Verify the EmailID..]]>
+    </line>
+    <line>
+      <![CDATA[Verify the UserName..]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-07-11T18:23:24 IST" name="Default suite" finished-at="2023-07-11T18:27:21 IST" duration-ms="237140">
+  <suite started-at="2023-07-15T18:34:49 IST" name="Suite" finished-at="2023-07-15T18:35:01 IST" duration-ms="11782">
     <groups>
     </groups>
-    <test started-at="2023-07-11T18:23:24 IST" name="Default test" finished-at="2023-07-11T18:27:21 IST" duration-ms="237140">
-      <class name="DataProviderWithExcel.DataProviderWithExcel">
-        <test-method is-config="true" signature="setup()[pri:0, instance:DataProviderWithExcel.DataProviderWithExcel@815b41f]" started-at="2023-07-11T18:23:26 IST" name="setup" finished-at="2023-07-11T18:24:40 IST" duration-ms="73666" status="PASS">
+    <test started-at="2023-07-15T18:34:49 IST" name="Test" finished-at="2023-07-15T18:35:01 IST" duration-ms="11782">
+      <class name="ExtentReport.TestNGExample">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:ExtentReport.TestNGExample@77c2494c]" started-at="2023-07-15T18:34:50 IST" name="LaunchBrowser" finished-at="2023-07-15T18:34:59 IST" duration-ms="9235" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[chrome browser opened...]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchKeyword(java.lang.String)[pri:0, instance:DataProviderWithExcel.DataProviderWithExcel@815b41f]" started-at="2023-07-11T18:24:40 IST" name="searchKeyword" data-provider="searchDataProvider" finished-at="2023-07-11T18:25:41 IST" duration-ms="60622" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Taj Mahal]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="GoogleSearch()[pri:0, instance:ExtentReport.TestNGExample@77c2494c]" started-at="2023-07-15T18:34:59 IST" name="GoogleSearch" finished-at="2023-07-15T18:35:00 IST" duration-ms="689" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Qutub Minar keyword is entered...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- GoogleSearch -->
+        <test-method signature="VerifyEmail()[pri:0, instance:ExtentReport.TestNGExample@77c2494c]" started-at="2023-07-15T18:35:00 IST" name="VerifyEmail" finished-at="2023-07-15T18:35:00 IST" duration-ms="50" status="SKIP">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8306ba5d5fca2914e4c41bfc6bd45aa7, sendKeysToElement {id=53AFA7F8FE8E99CF894429897B384C4E_element_2, value=[Ljava.lang.CharSequence;@1a1cc163}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Ganesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49476}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49476/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8306ba5d5fca2914e4c41bfc6bd45aa7)] -> name: q]
-Session ID: 8306ba5d5fca2914e4c41bfc6bd45aa7]]>
+              <![CDATA[skipping this test case with exception]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8306ba5d5fca2914e4c41bfc6bd45aa7, sendKeysToElement {id=53AFA7F8FE8E99CF894429897B384C4E_element_2, value=[Ljava.lang.CharSequence;@1a1cc163}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Ganesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49476}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49476/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (8306ba5d5fca2914e4c41bfc6bd45aa7)] -> name: q]
-Session ID: 8306ba5d5fca2914e4c41bfc6bd45aa7
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-at DataProviderWithExcel.DataProviderWithExcel.searchKeyword(DataProviderWithExcel.java:50)
+              <![CDATA[org.testng.SkipException: skipping this test case with exception
+at ExtentReport.TestNGExample.VerifyEmail(TestNGExample.java:72)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -82,61 +69,25 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
+            <line>
+              <![CDATA[Verify the EmailID..]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- searchKeyword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DataProviderWithExcel.DataProviderWithExcel@815b41f]" started-at="2023-07-11T18:25:41 IST" name="tearDown" finished-at="2023-07-11T18:25:42 IST" duration-ms="880" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:DataProviderWithExcel.DataProviderWithExcel@815b41f]" started-at="2023-07-11T18:25:42 IST" name="setup" finished-at="2023-07-11T18:26:07 IST" duration-ms="25587" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchKeyword(java.lang.String)[pri:0, instance:DataProviderWithExcel.DataProviderWithExcel@815b41f]" started-at="2023-07-11T18:26:07 IST" name="searchKeyword" data-provider="searchDataProvider" finished-at="2023-07-11T18:27:08 IST" duration-ms="60454" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Lal Killa]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+        </test-method> <!-- VerifyEmail -->
+        <test-method signature="VerifyLogo()[pri:0, instance:ExtentReport.TestNGExample@77c2494c]" started-at="2023-07-15T18:35:00 IST" name="VerifyLogo" finished-at="2023-07-15T18:35:00 IST" duration-ms="53" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [31de7cea076ec249d596634ac50e6d9a, sendKeysToElement {id=7292C46FD66C07F3D649B79B1D2F6E90_element_2, value=[Ljava.lang.CharSequence;@6723610b}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Ganesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49560/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (31de7cea076ec249d596634ac50e6d9a)] -> name: q]
-Session ID: 31de7cea076ec249d596634ac50e6d9a]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 60.000
-  (Session info: chrome=114.0.5735.199)
-Build info: version: '4.8.1', revision: '8ebccac989'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [31de7cea076ec249d596634ac50e6d9a, sendKeysToElement {id=7292C46FD66C07F3D649B79B1D2F6E90_element_2, value=[Ljava.lang.CharSequence;@6723610b}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Ganesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49560}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49560/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (31de7cea076ec249d596634ac50e6d9a)] -> name: q]
-Session ID: 31de7cea076ec249d596634ac50e6d9a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-at DataProviderWithExcel.DataProviderWithExcel.searchKeyword(DataProviderWithExcel.java:50)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at ExtentReport.TestNGExample.VerifyLogo(TestNGExample.java:54)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -165,15 +116,66 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchKeyword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DataProviderWithExcel.DataProviderWithExcel@815b41f]" started-at="2023-07-11T18:27:08 IST" name="tearDown" finished-at="2023-07-11T18:27:21 IST" duration-ms="13308" status="PASS">
+        </test-method> <!-- VerifyLogo -->
+        <test-method signature="VerifyTitle()[pri:0, instance:ExtentReport.TestNGExample@77c2494c]" started-at="2023-07-15T18:35:00 IST" name="VerifyTitle" finished-at="2023-07-15T18:35:00 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at ExtentReport.TestNGExample.VerifyTitle(TestNGExample.java:62)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- DataProviderWithExcel.DataProviderWithExcel -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- VerifyTitle -->
+        <test-method signature="VerifyUserName()[pri:0, instance:ExtentReport.TestNGExample@77c2494c]" started-at="2023-07-15T18:35:00 IST" name="VerifyUserName" finished-at="2023-07-15T18:35:00 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Verify the UserName..]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyUserName -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:ExtentReport.TestNGExample@77c2494c]" started-at="2023-07-15T18:35:00 IST" name="TearDown" finished-at="2023-07-15T18:35:01 IST" duration-ms="856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- ExtentReport.TestNGExample -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
