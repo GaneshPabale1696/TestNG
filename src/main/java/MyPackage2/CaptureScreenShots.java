@@ -54,7 +54,7 @@ public class CaptureScreenShots {
 		FileUtils.copyFile(src, trg);
 		
 		
-		driver.close();
+		//driver.close();
 			
 	}
 
